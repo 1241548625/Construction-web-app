@@ -1,10 +1,5 @@
-/* .page {
-  position: relative;
-  overflow: hidden;
-} */
-
 .container {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   position: absolute;
   top: 160px;
   width: 100%;
@@ -13,34 +8,80 @@
   flex-direction: column;
 }
 .up-level {
+  position: relative;
   width: 100%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  flex: 50;
+  /* display: flex; */
+}
+.down-level {
+  position: relative;
+  width: 100%;
+  /* background-color: brown; */
   flex: 50;
   display: flex;
 }
-.down-level {
-  width: 100%;
-  background-color: brown;
-  flex: 50;
+
+.picture1 {
+  /* position: absolute; */
+  float: right;
+  /* flex: 1.5; */
+  /* width: 1000px; */
+  /* height: 700px; */
+  width: 50%;
+  height: 700px;
+  background-image: url("../asset/HomePage.jpg");
+  /* background-color: burlywood; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55% 50%;
 }
 .intro1 {
-  flex: 1;
-  background-color: rgb(124, 191, 95);
+  /* flex: 1; */
+  position: absolute;
+  /* width: 800px; */
+  /* left: 110px; */
+  width: 50%;
+  left: 10%;
+  top: 34%;
+  /* background-color: rgb(124, 191, 95); */
 }
-.picture1 {
-  flex: 1.5;
-  width: 400px;
-  height: 700px;
-  /* background-image: url("../asset/HomePage.jpg"); */
-  background-color: burlywood;
+.intro1 h1 {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.intro1 p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+
+.picture2 {
+  /* position: absolute; */
+  float: left;
+  /* flex: 1.5; */
+  /* width: 1000px; */
+  /* height: 700px; */
+  width: 53%;
+  height: 900px;
+  background-image: url("../asset/HomePage2.jpg");
+  /* background-color: burlywood; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: 55% 50%; */
-  /* background-position: center center; */
+  background-size: contain;
+  background-position: 40% 60%;
 }
-.pic1 {
-  /* background-position: center center; */
-  background-size: cover;
-  width: 900px;
-  height: 1000px;
+.intro2 {
+  /* flex: 1; */
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  left: 50%;
+  top: 45%;
+
+  /* background-color: rgb(124, 191, 95); */
+}
+.intro2 p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 30px;
 }

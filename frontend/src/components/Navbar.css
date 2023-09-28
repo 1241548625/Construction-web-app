@@ -1,0 +1,37 @@
+.outside-box {
+  position: fixed;
+  /* background-color: white; */
+  background-color: antiquewhite;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  /* overflow: hidden; */
+  z-index: 1000;
+}
+
+.logo-box {
+  /* background-color: antiquewhite; */
+  width: 300px;
+  height: 40px;
+  margin-left: 60px;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: light;
+  font-style: italic;
+}
+.header-menu {
+  display: flex;
+  /* background-color: rgb(110, 110, 22); */
+  width: 700px;
+  height: 50px;
+  margin-left: 5%;
+}
+ul li {
+  /* background-color: blanchedalmond; */
+  display: flex;
+  margin-left: 15%;
+  font-size: 20px;
+  font-weight: lighter;
+}

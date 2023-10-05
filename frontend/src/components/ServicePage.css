@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  height: 40%;
+  margin-bottom: 7%;
+}
+.text {
+  margin-top: 20px;
+  margin-left: 5%;
+  width: 50%;
+  margin-right: 5%;
+}
+
+.pic {
+  height: 500px;
+  width: 50%;
+  margin-right: 5%;
+}
+
+p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 30px;
+}

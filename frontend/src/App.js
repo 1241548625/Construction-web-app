@@ -1,6 +1,7 @@
 // import "./App.css";
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
+import ServicePage from "./components/ServicePage";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" Component={HomePage} />
           <Route />
-          <Route />
+          <Route path="/Service" Component={ServicePage} />
         </Routes>
       </BrowserRouter>
     </div>

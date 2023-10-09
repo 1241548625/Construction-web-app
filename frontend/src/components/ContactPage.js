@@ -69,10 +69,14 @@ const ContactPage = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="container">
+      <div className="contact-container">
         <div className="left">
-          <h1 className="text">HAVE A PROJECT TO DISCUSS, GEI IN TOUCH</h1>
-          <img className="pic" src={p1} alt="P1" />
+          <div>
+            <h1 className="contact-text">
+              HAVE A PROJECT TO DISCUSS, GEI IN TOUCH
+            </h1>
+          </div>
+          <img className="contact-pic" src={p1} alt="P1" />
         </div>
 
         <div className="right">

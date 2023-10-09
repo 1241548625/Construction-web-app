@@ -1,31 +1,40 @@
-.container {
+.contact-container {
   display: flex;
+  justify-content: center;
   flex-direction: row;
+  margin-top: 180px;
+  flex-basis: 50%;
 }
 
 .left {
-  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* align-items: end; */
+  /* width: 50%; */
+  gap: 50px;
   /* flex: 1; */
   /* background-color: aqua; */
 }
 
-.text {
-  margin-left: 20%;
+.left > div {
+  width: 500px;
+}
+
+.contact-text {
   width: 400px;
   line-height: 63px;
   /* background-color: blanchedalmond; */
 }
 
-.pic {
-  margin-top: 50px;
-  margin-left: 20%;
+.contact-pic {
   width: 500px;
   height: 400px;
 }
 
 .right {
   display: flex;
-  flex: 1;
+  /* width: 50%; */
   justify-content: center;
   align-items: center;
   /* margin-top: 20px; */

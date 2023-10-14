@@ -46,7 +46,6 @@ const Users = async (req, res) => {
 
     res.status(200).json({
       message: "User created successfully",
-      "Access-Control-Allow-Origin": "*",
     });
   } catch (err) {
     res.status(500).json({ error: err.message });

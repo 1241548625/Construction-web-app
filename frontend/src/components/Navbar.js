@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="outside-box">
-        <div className="logo-box">QU CONSTRUCTION</div>
+        <div className="logo-box">CONSTRUCTION</div>
         <ul className="header-menu">
           <li>
             <Link underline="hover" color="inherit" href="/">

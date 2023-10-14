@@ -5,8 +5,10 @@ import FormInput from "./FormInput";
 import "./ContactPage.css";
 import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import { useNavigate } from "react-router-dom";
 
 const ContactPage = () => {
+  const navigate = useNavigate();
   const [values, setValues] = useState({
     FirstName: "",
     LastName: "",
@@ -55,15 +57,40 @@ const ContactPage = () => {
     },
   ];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // const data = new FormData(e.target);
-    // // to print out the form data
+    // console.log(e.target.form.value);
+    // const data = new FormData(e.target.value);
+    // // // to print out the form data
     // console.log(Object.fromEntries(data.entries()));
+    // form data stored in values.
+
+    // console.log(values);
+    try {
+      const savedUserResponse = await fetch(
+        "http://localhost:3001/api/contact/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      ).then((response) => {
+        if (response.status === 200) {
+          //after send message to backend, and backend send back 200 status, we navigate page
+          navigate("/");
+        }
+      });
+    } catch (error) {
+      console.log("Error sending data:", error);
+      return;
+    }
   };
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
+    // console.log(e.target.value);
   };
 
   return (
@@ -86,17 +113,18 @@ const ContactPage = () => {
                 className="form"
                 key={input.id}
                 {...input}
-                value={values[input.name]}
+                // value={values[input.name]}
+                value={values.name}
                 onChange={onChange}
               ></FormInput>
             ))}
-            <Button
+            <button
               variant="contained"
               endIcon={<SendIcon />}
               sx={{ top: "10px" }}
             >
               Send
-            </Button>
+            </button>
           </form>
         </div>
       </div>

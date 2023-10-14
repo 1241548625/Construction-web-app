@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 //to store sensetitve information
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
+import cors from "cors";
 //route
 import submitRoute from "./routes/submit.js";
 
@@ -12,7 +13,7 @@ dotenv.config();
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(cors());
 // Access environment variables
 const PORT = process.env.PORT || 3000;
 const Mongoose = process.env.MONGO_URL;

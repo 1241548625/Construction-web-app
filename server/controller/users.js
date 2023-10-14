@@ -4,6 +4,7 @@ import UserSchema from "../model/User.js";
 // when user submit the form, create new user
 const Users = async (req, res) => {
   try {
+    console.log(req.body);
     const { FirstName, LastName, email, phone, message } = req.body;
 
     const newUser = new UserSchema({
@@ -43,7 +44,10 @@ const Users = async (req, res) => {
     //     return res.status(500).json({ err });
     //   });
 
-    res.status(201).json({ message: "User created successfully" });
+    res.status(200).json({
+      message: "User created successfully",
+      "Access-Control-Allow-Origin": "*",
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

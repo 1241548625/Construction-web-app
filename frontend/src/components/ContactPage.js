@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import p1 from "../asset/Contact2.jpg";
 import FormInput from "./FormInput";
 import "./ContactPage.css";
-import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { useNavigate } from "react-router-dom";
 
@@ -79,7 +78,7 @@ const ContactPage = () => {
       ).then((response) => {
         if (response.status === 200) {
           //after send message to backend, and backend send back 200 status, we navigate page
-          navigate("/");
+          navigate("/Confirm");
         }
       });
     } catch (error) {

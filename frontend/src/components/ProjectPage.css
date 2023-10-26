@@ -17,14 +17,14 @@
   width: 50%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
   .project-container {
     display: block;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 990px) {
   .project-container {
     width: 33.33333%;
   }

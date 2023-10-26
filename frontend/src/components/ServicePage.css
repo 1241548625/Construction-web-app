@@ -45,5 +45,12 @@ p {
   .pic {
     width: 87%;
     margin-top: 10%;
+    height: 300px;
+  }
+  .text h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 17px;
   }
 }

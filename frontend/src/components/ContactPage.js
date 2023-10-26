@@ -58,13 +58,6 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(e.target.form.value);
-    // const data = new FormData(e.target.value);
-    // // // to print out the form data
-    // console.log(Object.fromEntries(data.entries()));
-    // form data stored in values.
-
-    // console.log(values);
     try {
       const savedUserResponse = await fetch(
         "http://localhost:3001/api/contact/submit",
@@ -97,10 +90,8 @@ const ContactPage = () => {
       <Navbar></Navbar>
       <div className="contact-container">
         <div className="left">
-          <div>
-            <h1 className="contact-text">
-              HAVE A PROJECT TO DISCUSS, GEI IN TOUCH
-            </h1>
+          <div className="contact-text">
+            <h1>HAVE A PROJECT TO DISCUSS, GEI IN TOUCH</h1>
           </div>
           <img className="contact-pic" src={p1} alt="P1" />
         </div>

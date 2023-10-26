@@ -14,7 +14,7 @@ const ProjectPage = () => {
       <div class="project-container">
         <h3 class="title"></h3>
         <div class="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <a href="" target="_blank">
             <div class="content-overlay"></div>
             <img class="content-image" src={project1} alt="" />
             <div class="content-details fadeIn-bottom">
@@ -28,7 +28,7 @@ const ProjectPage = () => {
       <div class="project-container">
         <h3 class="title"></h3>
         <div class="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <a href="" target="_blank">
             <div class="content-overlay"></div>
             <img class="content-image" src={project2} alt="" />
             <div class="content-details fadeIn-bottom">
@@ -42,7 +42,7 @@ const ProjectPage = () => {
       <div class="project-container">
         <h3 class="title"></h3>
         <div class="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <a href="" target="_blank">
             <div class="content-overlay"></div>
             <img class="content-image" src={project3} alt="" />
             <div class="content-details fadeIn-bottom">
@@ -56,7 +56,7 @@ const ProjectPage = () => {
       <div class="project-container">
         <h3 class="title"></h3>
         <div class="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <a href="" target="_blank">
             <div class="content-overlay"></div>
             <img class="content-image" src={project4} alt="" />
             <div class="content-details fadeIn-bottom">
@@ -70,7 +70,7 @@ const ProjectPage = () => {
       <div class="project-container">
         <h3 class="title"></h3>
         <div class="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <a href="" target="_blank">
             <div class="content-overlay"></div>
             <img class="content-image" src={project1} alt="" />
             <div class="content-details fadeIn-bottom">
@@ -84,7 +84,7 @@ const ProjectPage = () => {
       <div class="project-container">
         <h3 class="title"></h3>
         <div class="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <a href="" target="_blank">
             <div class="content-overlay"></div>
             <img class="content-image" src={project2} alt="" />
             <div class="content-details fadeIn-bottom">

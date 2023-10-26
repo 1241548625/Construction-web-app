@@ -16,16 +16,7 @@ const ServicePage = () => {
               From custom homes to renovations and additions, we bring your
               residential dreams to life. Our team of skilled craftsmen and
               designers ensure that your home reflects your unique style and
-              meets the highest quality standards.Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's standard dummy text ever since the 1500s, when
-              an unknown printer took a galley of type and scrambled it to make
-              a type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              meets the highest quality standards.
             </p>
           </div>
           <img className="pic" src={p1} alt="P1" />
@@ -37,16 +28,7 @@ const ServicePage = () => {
               From custom homes to renovations and additions, we bring your
               residential dreams to life. Our team of skilled craftsmen and
               designers ensure that your home reflects your unique style and
-              meets the highest quality standards. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's standard dummy text ever since the 1500s, when
-              an unknown printer took a galley of type and scrambled it to make
-              a type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              meets the highest quality standards.
             </p>
           </div>
           <div className="text">
@@ -55,16 +37,7 @@ const ServicePage = () => {
               Enhance the value and beauty of your existing property with our
               renovation and remodeling expertise. We breathe new life into old
               spaces, creating functional and stylish environments that match
-              your evolving needs.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              with desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              your evolving needs.
             </p>
           </div>
         </div>
@@ -74,16 +47,7 @@ const ServicePage = () => {
             <p>
               Not sure where to start? Our expert consultants can help you with
               feasibility studies, budgeting, and project planning. We provide
-              valuable insights to guide your construction decisions.Lorem Ipsum
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic
-              typesetting, remaining essentially unchanged. It was popularised
-              in the 1960s with the release of Letraset sheets containing Lorem
-              Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum.
+              valuable insights to guide your construction decisions.
             </p>
           </div>
           <img className="pic" src={p2} alt="P2" />

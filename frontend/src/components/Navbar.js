@@ -118,6 +118,11 @@ const Navbar = () => {
                   Contact
                 </Link>
               </ListItem>
+              <ListItem button>
+                <Link href="/about" sx={{ textDecoration: "none" }}>
+                  About
+                </Link>
+              </ListItem>
             </List>
           </Drawer>
         </Box>

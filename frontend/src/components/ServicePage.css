@@ -15,6 +15,9 @@
   width: 50%;
   margin-right: 5%;
 }
+.text h1 {
+  margin: 10px 0;
+}
 
 .pic {
   height: 500px;
@@ -27,4 +30,20 @@ p {
   font-size: 20px;
   font-weight: lighter;
   line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .text {
+    width: 87%;
+  }
+  .pic {
+    width: 87%;
+    margin-top: 10%;
+  }
 }

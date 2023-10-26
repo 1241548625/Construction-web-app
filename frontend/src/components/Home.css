@@ -1,5 +1,4 @@
 .container {
-  /* background-color: antiquewhite; */
   position: absolute;
   top: 160px;
   width: 100%;
@@ -10,41 +9,29 @@
 .up-level {
   position: relative;
   width: 100%;
-  /* background-color: aquamarine; */
   flex: 50;
-  /* display: flex; */
 }
 .down-level {
   position: relative;
   width: 100%;
-  /* background-color: brown; */
   flex: 50;
   display: flex;
 }
 
 .picture1 {
-  /* position: absolute; */
   float: right;
-  /* flex: 1.5; */
-  /* width: 1000px; */
-  /* height: 700px; */
   width: 50%;
   height: 700px;
   background-image: url("../asset/HomePage.jpg");
-  /* background-color: burlywood; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55% 50%;
 }
 .intro1 {
-  /* flex: 1; */
   position: absolute;
-  /* width: 800px; */
-  /* left: 110px; */
   width: 50%;
   left: 10%;
   top: 34%;
-  /* background-color: rgb(124, 191, 95); */
 }
 .intro1 h1 {
   font-weight: 300;
@@ -57,31 +44,72 @@
 }
 
 .picture2 {
-  /* position: absolute; */
   float: left;
-  /* flex: 1.5; */
-  /* width: 1000px; */
-  /* height: 700px; */
   width: 53%;
   height: 900px;
   background-image: url("../asset/HomePage2.jpg");
-  /* background-color: burlywood; */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 40% 60%;
 }
 .intro2 {
-  /* flex: 1; */
   position: absolute;
-  width: 700px;
+  width: 40%;
   height: 200px;
   left: 50%;
   top: 45%;
-
   /* background-color: rgb(124, 191, 95); */
 }
 .intro2 p {
   font-size: 20px;
   font-weight: lighter;
   line-height: 30px;
+}
+
+@media screen and (max-width: 1260px) {
+  .intro2 {
+    top: 35%;
+    left: 56%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    top: 100px;
+  }
+  .up-level {
+    display: flex;
+    flex-direction: column;
+    /* height: 50%; */
+  }
+  .picture1 {
+    width: 100%;
+  }
+  .intro1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 8%;
+    width: 95%;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+  .intro1 h1 {
+    /* font-weight: 500; */
+    letter-spacing: 3px;
+    line-height: 43px;
+  }
+  .intro1 p {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 35px;
+  }
+  .picture2 {
+    margin-top: 30%;
+    /* position: relative; */
+    width: 100%;
+  }
+  .intro2 {
+    width: 90%;
+    left: 5%;
+    top: 3%;
+  }
 }

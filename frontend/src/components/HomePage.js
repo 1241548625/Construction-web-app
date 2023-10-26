@@ -11,10 +11,9 @@ const HomePage = () => {
           <div className="intro1">
             <h1>WE ARE BUILDING YOUR DREAM HOUSE</h1>
             <p>
-              At Qu Construction Inc, we're more than just builders; we're
-              creators of lasting impressions. Our commitment to excellence and
-              passion for construction drive us to turn your vision into
-              reality.
+              At Construction Inc, we're more than just builders; we're creators
+              of lasting impressions. Our commitment to excellence and passion
+              for construction drive us to turn your vision into reality.
             </p>
           </div>
 

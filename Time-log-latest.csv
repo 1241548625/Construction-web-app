@@ -1,0 +1,48 @@
+week1,date,duration,category,activity
+,Monday,4 hour,planning,online search about what kind of web I want to make and looking for supervisor
+,Tues,3 hour,planning,"online search material, tool that I will need in this project and orientation quiz. wrote note about the planning of web app "
+,wed,4 hour,Intake survey,Intake survey  submitted and project proposal survery have not done yet
+,thur,4 hour,planning,"talked to supervisor about the planning of project, and made some update. and submitted project proposal survery "
+,,,,
+week2,date,duration,category,activity
+,Monday,1 hour,design,UI design
+,Tues,3 hour,design,UI design using figma online research
+,wed,2 hour,design,design document research
+,sat,4 hour,design,design document
+,,,,
+week3,date,duration,category,activity
+,tues,3 hour,backend,"how to set up backend environment; express js, cors, nodeman "
+,wed,2 hour,assigment,demo 1
+,sat,2 hour,backend,mongodb set up and data model 
+,sun,4 hour,assigment,how to create github respository;  vedio recording; demo 1
+,,,,
+,,,,
+week4,date,duration,category,activity
+,mon,1 hour,assignment,"go over the demo 1 , prepare for demo 1 present; "
+,wed,3 hour,backend,"learn how to use emialchimp, and get API key, connect to backend"
+,thu,6 hour,backend,learn route and nodemailer; fix bug; create main folder to store server folder and frontend folder; create react app and add google fonts 
+,,,,
+,,,,
+week5,date,duration,category,activity
+,mon,3 hour,learning ,review css basic component
+,tue,4 hour,learning ,review css basic component
+,wed,7 hour,learning; frontend ,review css; and create navbar and working on homepage 
+,thu,2 hour,frontend,finish home page
+,,,,
+week6,Wed,3 hr,Development,Developing Service Page
+,Thu,4 hr,Development & Research,Finish Service page and about page; Planing submit form for contact page
+,Sat,5 hr,Development,Developing Contact page; Review react state
+,Sun,5 hr,Learning,Review React
+week 7,Mon,7 hr,Learning & development,Review React & fix contact page
+,Tue,2 hr,Learning,Review React
+,Wed,2 hr,Development,Use fetch to send date to backend
+,Fri,4 hr,Development,Finish Contact Page
+week 8,Mon,1 hr,Assignment,Demo 2
+,Tue,5 hr,Learning & development,Review Media query & developing project page
+,Wed,5 hr,Development,Developing confirm page and project page
+week 9,Mon,2 hr,Learning,Review css
+,Thur,8 hr,Development,Fix css navbar drawer; Fix home page css and make it responsive; fix service page and make it responsive; fix contact page and make it responsive
+,,,,
+week 10,date,duration,category,activity
+,thu,5 hr,assignment,presentation slide
+,sat,7 hr,assigment,"presentation slide; and the previous time log can't convert to csv, so renew time log sheet "

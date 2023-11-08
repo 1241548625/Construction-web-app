@@ -6,94 +6,54 @@ import project4 from "../asset/Project4.jpg";
 import Navbar from "./Navbar";
 import "./ProjectPage.css";
 
+const project = [
+  {
+    title: "project1",
+    image: project1,
+    description: "This is a short description",
+  },
+  {
+    title: "project2",
+    image: project2,
+    description: "This is a short description",
+  },
+  {
+    title: "project3",
+    image: project3,
+    description: "This is a short description",
+  },
+  {
+    title: "project4",
+    image: project4,
+    description: "This is a short description",
+  },
+  {
+    title: "project1",
+    image: project1,
+    description: "This is a short description",
+  },
+];
+
 const ProjectPage = () => {
   return (
     <div>
       <Navbar />
       <div className="portition"></div>
-      <div class="project-container">
-        <h3 class="title"></h3>
-        <div class="content">
-          <a href="" target="_blank">
-            <div class="content-overlay"></div>
-            <img class="content-image" src={project1} alt="" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
+      {project.map((project) => (
+        <div class="project-container">
+          <h3 class="title"></h3>
+          <div class="content">
+            <a href="" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src={project.image} alt="" />
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">{project.title}</h3>
+                <p class="content-text">{project.description}</p>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="project-container">
-        <h3 class="title"></h3>
-        <div class="content">
-          <a href="" target="_blank">
-            <div class="content-overlay"></div>
-            <img class="content-image" src={project2} alt="" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <h3 class="title"></h3>
-        <div class="content">
-          <a href="" target="_blank">
-            <div class="content-overlay"></div>
-            <img class="content-image" src={project3} alt="" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <h3 class="title"></h3>
-        <div class="content">
-          <a href="" target="_blank">
-            <div class="content-overlay"></div>
-            <img class="content-image" src={project4} alt="" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <h3 class="title"></h3>
-        <div class="content">
-          <a href="" target="_blank">
-            <div class="content-overlay"></div>
-            <img class="content-image" src={project1} alt="" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-container">
-        <h3 class="title"></h3>
-        <div class="content">
-          <a href="" target="_blank">
-            <div class="content-overlay"></div>
-            <img class="content-image" src={project2} alt="" />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

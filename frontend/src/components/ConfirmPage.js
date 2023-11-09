@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import CheckMark from "../asset/CheckMark.jpg";
 import "./ConfirmPage.css";
+import { useNavigate } from "react-router-dom";
 
-const ConfirmPage = () => {
+const ConfirmPage = (props) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!props.isFormSubmit) {
+      navigate("/contact");
+    }
+  }, []);
+
   return (
     <div>
       <Navbar />

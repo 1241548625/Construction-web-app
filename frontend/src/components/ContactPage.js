@@ -6,8 +6,9 @@ import "./ContactPage.css";
 import SendIcon from "@mui/icons-material/Send";
 import { useNavigate } from "react-router-dom";
 
-const ContactPage = () => {
+const ContactPage = (props) => {
   const navigate = useNavigate();
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [values, setValues] = useState({
     FirstName: "",
     LastName: "",
@@ -70,6 +71,8 @@ const ContactPage = () => {
         }
       ).then((response) => {
         if (response.status === 200) {
+          // setIsFormSubmitted(true);
+          props.onFormSubmitted(true);
           //after send message to backend, and backend send back 200 status, we navigate page
           navigate("/Confirm");
         }

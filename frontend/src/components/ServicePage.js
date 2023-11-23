@@ -12,7 +12,7 @@ const ServicePage = () => {
         <Line />
         <p className="about-title">Our Service</p>
         <div className="section">
-          <div className="text">
+          <div className="text" data-aos="fade-right">
             <h1>Residential Construction</h1>
             <p>
               From custom homes to renovations and additions, we bring your
@@ -21,10 +21,10 @@ const ServicePage = () => {
               meets the highest quality standards.
             </p>
           </div>
-          <img className="pic" src={p1} alt="P1" />
+          <img className="pic" src={p1} alt="P1" data-aos="fade-left" />
         </div>
         <div className="section">
-          <div className="text">
+          <div className="text" data-aos="fade-right">
             <h1>Commercial Construction</h1>
             <p>
               From custom homes to renovations and additions, we bring your
@@ -33,7 +33,7 @@ const ServicePage = () => {
               meets the highest quality standards.
             </p>
           </div>
-          <div className="text">
+          <div className="text" data-aos="fade-left">
             <h1>Renovations and Remodeling</h1>
             <p>
               Enhance the value and beauty of your existing property with our
@@ -44,7 +44,7 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="section">
-          <div className="text">
+          <div className="text" data-aos="fade-right">
             <h1>Consulting and Planning</h1>
             <p>
               Not sure where to start? Our expert consultants can help you with
@@ -52,7 +52,7 @@ const ServicePage = () => {
               valuable insights to guide your construction decisions.
             </p>
           </div>
-          <img className="pic" src={p2} alt="P2" />
+          <img className="pic" src={p2} alt="P2" data-aos="fade-left" />
         </div>
       </div>
     </div>

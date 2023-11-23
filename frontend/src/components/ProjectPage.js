@@ -44,7 +44,7 @@ const ProjectPage = () => {
       <Line />
       <div className="portition">Our Project</div>
       {project.map((project) => (
-        <div class="project-container">
+        <div class="project-container" data-aos="flip-down">
           <h3 class="title"></h3>
           <div class="content">
             <a href="" target={projectId}>

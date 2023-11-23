@@ -11,7 +11,7 @@ const AboutPage = () => {
       <Line />
       <p className="about-title">About us</p>
       <div className="section">
-        <div className="text">
+        <div className="text" data-aos="fade-right">
           <h1>OUR MISSION</h1>
           <p>
             From custom homes to renovations and additions, we bring your
@@ -20,11 +20,11 @@ const AboutPage = () => {
             the highest quality standards.
           </p>
         </div>
-        <img className="pic" src={p1} alt="P1" />
+        <img className="pic" src={p1} alt="P1" data-aos="fade-left" />
       </div>
       <div className="section">
-        <img className="pic" src={p2} alt="P1" />
-        <div className="text">
+        <img className="pic" src={p2} alt="P1" data-aos="fade-right" />
+        <div className="text" data-aos="fade-left">
           <h1>OUR TEAM</h1>
           <p>
             Our success is a testament to the hard work and dedication of our

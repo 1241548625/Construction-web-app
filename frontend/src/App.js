@@ -9,6 +9,7 @@ import ConfirmPage from "./components/ConfirmPage";
 import ProjectPage from "./components/ProjectPage";
 import ProjectDetail from "./components/ProjectDetail";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -30,6 +31,7 @@ function App() {
                 <ProjectPage />
                 <AboutPage />
                 <ContactPage />
+                <Footer />
               </div>
             }
           />

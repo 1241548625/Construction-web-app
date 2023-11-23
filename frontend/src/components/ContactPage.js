@@ -89,8 +89,7 @@ const ContactPage = (props) => {
   };
 
   return (
-    <div>
-      <Navbar></Navbar>
+    <div id="contact">
       <div className="contact-container">
         <div className="left">
           <div className="contact-text">

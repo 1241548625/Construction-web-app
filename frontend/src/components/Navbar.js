@@ -30,22 +30,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="/project">
+              <Link underline="hover" color="inherit" href="#project">
                 Project
               </Link>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="/Service">
+              <Link underline="hover" color="inherit" href="#service">
                 Service
               </Link>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="/contact">
+              <Link underline="hover" color="inherit" href="#contact">
                 Contact
               </Link>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="/about">
+              <Link underline="hover" color="inherit" href="#about">
                 About
               </Link>
             </li>
@@ -103,23 +103,23 @@ const Navbar = () => {
               </ListItem>
 
               <ListItem button>
-                <Link href="/project" sx={{ textDecoration: "none" }}>
+                <Link href="#project" sx={{ textDecoration: "none" }}>
                   Project
                 </Link>
               </ListItem>
 
               <ListItem button>
-                <Link href="/service" sx={{ textDecoration: "none" }}>
+                <Link href="#service" sx={{ textDecoration: "none" }}>
                   Service
                 </Link>
               </ListItem>
               <ListItem button>
-                <Link href="/contact" sx={{ textDecoration: "none" }}>
+                <Link href="#contact" sx={{ textDecoration: "none" }}>
                   Contact
                 </Link>
               </ListItem>
               <ListItem button>
-                <Link href="/about" sx={{ textDecoration: "none" }}>
+                <Link href="#about" sx={{ textDecoration: "none" }}>
                   About
                 </Link>
               </ListItem>

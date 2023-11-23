@@ -6,8 +6,7 @@ import p2 from "../asset/ServicePage2.jpg";
 
 const ServicePage = () => {
   return (
-    <div>
-      <Navbar></Navbar>
+    <div id="service">
       <div className="container">
         <div className="section">
           <div className="text">

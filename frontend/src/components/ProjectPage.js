@@ -5,6 +5,7 @@ import project3 from "../asset/Project3.jpg";
 import project4 from "../asset/Project4.jpg";
 import Navbar from "./Navbar";
 import "./ProjectPage.css";
+import { useParams } from "react-router-dom";
 
 const project = [
   {
@@ -35,15 +36,16 @@ const project = [
 ];
 
 const ProjectPage = () => {
+  const { projectId } = useParams();
+
   return (
-    <div>
-      <Navbar />
+    <div id="project">
       <div className="portition"></div>
       {project.map((project) => (
         <div class="project-container">
           <h3 class="title"></h3>
           <div class="content">
-            <a href="" target="_blank">
+            <a href="" target={projectId}>
               <div class="content-overlay"></div>
               <img class="content-image" src={project.image} alt="" />
               <div class="content-details fadeIn-bottom">

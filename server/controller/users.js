@@ -4,9 +4,19 @@ import UserSchema from "../model/User.js";
 // when user submit the form, create new user
 const Users = async (req, res) => {
   try {
-    console.log(req.body);
-    const { FirstName, LastName, email, phone, message } = req.body;
+    // console.log(req.body);
 
+    // check if user email or phone number is in use
+    // const userExist = await await UserSchema.findOne({
+    //   $or: [{ email: email }, { phone: phone }],
+    // });
+    // if (userExist) {
+    //   return res
+    //     .status(422)
+    //     .json({ error: "Email or Phone number already exists" });
+    // }
+
+    const { FirstName, LastName, email, phone, message } = req.body;
     const newUser = new UserSchema({
       FirstName,
       LastName,

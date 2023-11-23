@@ -1,13 +1,25 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .container {
   position: relative;
   display: flex;
   flex-direction: column;
+  /* margin-top: 100px; */
 }
 
 .section {
   display: flex;
   height: 40%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
+  margin-top: 140px;
 }
 .text {
   margin-top: 20px;

@@ -5,7 +5,6 @@ import "./Home.css";
 const HomePage = () => {
   return (
     <div className="page">
-      <Navbar></Navbar>
       <div className="container">
         <div className="up-level">
           <div className="intro1">

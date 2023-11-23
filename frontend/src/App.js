@@ -7,6 +7,8 @@ import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
 import ConfirmPage from "./components/ConfirmPage";
 import ProjectPage from "./components/ProjectPage";
+import ProjectDetail from "./components/ProjectDetail";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -18,23 +20,27 @@ function App() {
     <div classname="app">
       <BrowserRouter>
         <Routes>
-          {/* <Route
+          <Route
             index
             element={
               <div>
+                <Navbar />
                 <HomePage />
                 <ServicePage />
+                <ProjectPage />
                 <AboutPage />
                 <ContactPage />
               </div>
             }
-          /> */}
+          />
           <Route path="/" Component={HomePage} />
           <Route path="Service" Component={ServicePage} />
           <Route path="About" Component={AboutPage} />
-          <Route path="project" Component={ProjectPage} />
+          <Route path="project" Component={ProjectPage}>
+            <Route path=":projectId" element={ProjectDetail} />
+          </Route>
           <Route
-            path="/contact"
+            path="contact"
             element={
               <div>
                 <ContactPage onFormSubmitted={submitHandler} />
@@ -43,7 +49,7 @@ function App() {
           />
 
           <Route
-            path="/Confirm"
+            path="Confirm"
             element={
               <div>{<ConfirmPage isFormSubmit={isFormSubmitted} />}</div>
             }

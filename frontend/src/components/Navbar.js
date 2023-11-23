@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
+import { Link as Link2 } from "react-scroll";
+
 import "./Navbar.css";
 import { useMediaQuery } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -25,29 +26,79 @@ const Navbar = () => {
           <div className="logo-box">CONSTRUCTION</div>
           <ul className="header-menu">
             <li>
-              <Link underline="hover" color="inherit" href="/">
+              {/* <Link underline="hover" color="inherit" href="/">
                 Home
-              </Link>
+              </Link> */}
+              <Link2
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                to="/"
+                style={{ cursor: "pointer" }}
+              >
+                Home
+              </Link2>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="#project">
+              {/* <Link underline="hover" color="inherit" href="#project">
                 Project
-              </Link>
+              </Link> */}
+              <Link2
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                to="project"
+                style={{ cursor: "pointer" }}
+              >
+                Project
+              </Link2>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="#service">
+              {/* <Link underline="hover" color="inherit" href="#service">
                 Service
-              </Link>
+              </Link> */}
+              <Link2
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                to="service"
+                style={{ cursor: "pointer" }}
+              >
+                Service
+              </Link2>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="#contact">
+              {/* <Link underline="hover" color="inherit" href="#contact">
                 Contact
-              </Link>
+              </Link> */}
+              <Link2
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                to="contact"
+                style={{ cursor: "pointer" }}
+              >
+                Contact
+              </Link2>
             </li>
             <li>
-              <Link underline="hover" color="inherit" href="#about">
+              {/* <Link underline="hover" color="inherit" href="#about">
                 About
-              </Link>
+              </Link> */}
+              <Link2
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                to="about"
+                style={{ cursor: "pointer" }}
+              >
+                About
+              </Link2>
             </li>
           </ul>
         </nav>
@@ -97,31 +148,76 @@ const Navbar = () => {
               onClick={() => setIsDrawerOpen(false)}
             >
               <ListItem button>
-                <Link href="/" sx={{ textDecoration: "none" }}>
+                {/* <Link href="/" sx={{ textDecoration: "none" }}>
                   Home
-                </Link>
+                </Link> */}
+                <Link2
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  to="/"
+                >
+                  Home
+                </Link2>
               </ListItem>
 
               <ListItem button>
-                <Link href="#project" sx={{ textDecoration: "none" }}>
+                {/* <Link href="#project" sx={{ textDecoration: "none" }}>
                   Project
-                </Link>
+                </Link> */}
+                <Link2
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  to="project"
+                >
+                  Project
+                </Link2>
               </ListItem>
 
               <ListItem button>
-                <Link href="#service" sx={{ textDecoration: "none" }}>
+                {/* <Link href="#service" sx={{ textDecoration: "none" }}>
                   Service
-                </Link>
+                </Link> */}
+                <Link2
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  to="service"
+                >
+                  Service
+                </Link2>
               </ListItem>
               <ListItem button>
-                <Link href="#contact" sx={{ textDecoration: "none" }}>
+                {/* <Link href="#contact" sx={{ textDecoration: "none" }}>
                   Contact
-                </Link>
+                </Link> */}
+                <Link2
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  to="contact"
+                >
+                  Contact
+                </Link2>
               </ListItem>
               <ListItem button>
-                <Link href="#about" sx={{ textDecoration: "none" }}>
+                {/* <Link href="#about" sx={{ textDecoration: "none" }}>
                   About
-                </Link>
+                </Link> */}
+                <Link2
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  to="about"
+                >
+                  About
+                </Link2>
               </ListItem>
             </List>
           </Drawer>

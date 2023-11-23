@@ -15,11 +15,17 @@
   /* margin-top: 100px; */
 }
 
+.about-title {
+  color: gray;
+  font-size: 16px;
+}
+
 .section {
   display: flex;
-  height: 40%;
-  margin-bottom: 5%;
-  margin-top: 140px;
+  /* height: 40%; */
+  /* margin-bottom: 2%; */
+  margin-top: 10%;
+  /* background-color: antiquewhite; */
 }
 .text {
   margin-top: 20px;

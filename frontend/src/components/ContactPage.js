@@ -5,6 +5,7 @@ import FormInput from "./FormInput";
 import "./ContactPage.css";
 import SendIcon from "@mui/icons-material/Send";
 import { useNavigate } from "react-router-dom";
+import Line from "./Line";
 
 const ContactPage = (props) => {
   const navigate = useNavigate();
@@ -90,6 +91,8 @@ const ContactPage = (props) => {
 
   return (
     <div id="contact">
+      <Line />
+      <p className="about-title">Contact Us</p>
       <div className="contact-container">
         <div className="left">
           <div className="contact-text">

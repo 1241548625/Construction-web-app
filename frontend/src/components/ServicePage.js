@@ -3,11 +3,14 @@ import Navbar from "./Navbar";
 import "./ServicePage.css";
 import p1 from "../asset/ServicePage1.jpg";
 import p2 from "../asset/ServicePage2.jpg";
+import Line from "./Line";
 
 const ServicePage = () => {
   return (
     <div id="service">
       <div className="container">
+        <Line />
+        <p className="about-title">Our Service</p>
         <div className="section">
           <div className="text">
             <h1>Residential Construction</h1>

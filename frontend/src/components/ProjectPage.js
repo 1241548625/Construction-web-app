@@ -6,6 +6,7 @@ import project4 from "../asset/Project4.jpg";
 import Navbar from "./Navbar";
 import "./ProjectPage.css";
 import { useParams } from "react-router-dom";
+import Line from "./Line";
 
 const project = [
   {
@@ -40,7 +41,8 @@ const ProjectPage = () => {
 
   return (
     <div id="project">
-      <div className="portition"></div>
+      <Line />
+      <div className="portition">Our Project</div>
       {project.map((project) => (
         <div class="project-container">
           <h3 class="title"></h3>

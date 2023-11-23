@@ -3,10 +3,13 @@ import Navbar from "./Navbar";
 import "./ServicePage.css";
 import p1 from "../asset/About3.jpg";
 import p2 from "../asset/about1.jpg";
+import Line from "./Line";
 
 const AboutPage = () => {
   return (
     <div className="container" id="about">
+      <Line />
+      <p className="about-title">About us</p>
       <div className="section">
         <div className="text">
           <h1>OUR MISSION</h1>

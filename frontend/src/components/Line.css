@@ -1,0 +1,13 @@
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+.line {
+  width: 85px;
+  height: 2px;
+}

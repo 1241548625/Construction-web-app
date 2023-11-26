@@ -38,9 +38,15 @@ function App() {
           <Route path="/" Component={HomePage} />
           <Route path="Service" Component={ServicePage} />
           <Route path="About" Component={AboutPage} />
-          <Route path="project" Component={ProjectPage}>
-            <Route path=":projectId" element={ProjectDetail} />
-          </Route>
+          <Route path="project" Component={ProjectPage} />
+          <Route
+            path="/project/:projectId"
+            element={
+              <div>
+                <ProjectDetail />
+              </div>
+            }
+          />
           <Route
             path="contact"
             element={

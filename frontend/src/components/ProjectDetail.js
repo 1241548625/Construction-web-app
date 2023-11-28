@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Projects from "../config";
-import Project1 from "../asset/project1/Project1.jpg";
+import "./ProjectDetail.css";
+import Navbar from "./Navbar";
 
 const ProjectDetail = () => {
   const params = useParams();
-  const [projectFolder, setProjectFolder] = useState();
   const [images, setImages] = useState();
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const importComponent = async () => {
@@ -35,14 +36,41 @@ const ProjectDetail = () => {
     importComponent();
   }, []);
 
+  const showImage = (index) => {
+    setCurrentImage((index + images.length) % images.length);
+  };
+
+  const changeImage = (n) => {
+    showImage(currentImage + n);
+  };
   return (
     <div>
-      {params.projectId}
+      <Navbar />
+      {/* {params.projectId}
       {images !== undefined
         ? images.map((image, index) => {
             return <img src={image} alt={image} />;
           })
-        : ""}
+        : ""} */}
+      {images !== undefined ? (
+        <div className="project-detail-container">
+          <img
+            className="image"
+            src={images[currentImage]}
+            alt={`Image ${currentImage + 1}`}
+          />
+          <div className="button-project">
+            <button className="btn" onClick={() => changeImage(-1)}>
+              Prev
+            </button>
+            <button className="btn" onClick={() => changeImage(1)}>
+              Next
+            </button>
+          </div>
+        </div>
+      ) : (
+        " "
+      )}
     </div>
   );
 };

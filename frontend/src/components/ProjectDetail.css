@@ -1,0 +1,45 @@
+.project-detail-container {
+  /* background-color: antiquewhite; */
+  /* height: 100vh; */
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 1000px;
+  height: 800px;
+  /* background-color: aqua; */
+}
+
+.button-project {
+  margin: 20px;
+}
+.btn {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #61666a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100px;
+}
+
+@media screen and (max-width: 950px) {
+  .image {
+    max-width: 900px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    max-width: 600px;
+    height: 300px;
+    /* background-color: aqua; */
+  }
+}

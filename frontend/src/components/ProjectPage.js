@@ -5,7 +5,7 @@ import project3 from "../asset/Project3.jpg";
 import project4 from "../asset/Project4.jpg";
 import Navbar from "./Navbar";
 import "./ProjectPage.css";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import Line from "./Line";
 
 const project = [
@@ -43,9 +43,12 @@ const project = [
 
 const ProjectPage = () => {
   const { projectId } = useParams();
+  const location = useLocation();
+
+  console.log(location);
 
   return (
-    <div id="project">
+    <div id="project-section">
       <Line />
       <div className="portition">Our Project</div>
       {project.map((project) => (

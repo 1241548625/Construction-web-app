@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "@mui/material/Link";
 import { Link as Link2 } from "react-scroll";
 
 import "./Navbar.css";
@@ -14,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
+import { Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -26,10 +26,8 @@ const Navbar = () => {
           <div className="logo-box">CONSTRUCTION</div>
           <ul className="header-menu">
             <li>
-              {/* <Link underline="hover" color="inherit" href="/">
-                Home
-              </Link> */}
               <Link2
+                activeClass="active"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -41,24 +39,18 @@ const Navbar = () => {
               </Link2>
             </li>
             <li>
-              {/* <Link underline="hover" color="inherit" href="#project">
-                Project
-              </Link> */}
               <Link2
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
-                to="project"
+                to="project-section"
                 style={{ cursor: "pointer" }}
               >
                 Project
               </Link2>
             </li>
             <li>
-              {/* <Link underline="hover" color="inherit" href="#service">
-                Service
-              </Link> */}
               <Link2
                 spy={true}
                 smooth={true}
@@ -71,9 +63,6 @@ const Navbar = () => {
               </Link2>
             </li>
             <li>
-              {/* <Link underline="hover" color="inherit" href="#contact">
-                Contact
-              </Link> */}
               <Link2
                 spy={true}
                 smooth={true}
@@ -86,9 +75,6 @@ const Navbar = () => {
               </Link2>
             </li>
             <li>
-              {/* <Link underline="hover" color="inherit" href="#about">
-                About
-              </Link> */}
               <Link2
                 spy={true}
                 smooth={true}
@@ -223,6 +209,8 @@ const Navbar = () => {
           </Drawer>
         </Box>
       )}
+
+      <Outlet />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 // import "./App.css";
 import React, { useState } from "react";
-import { BrowserRouter, useNavigate, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import ServicePage from "./components/ServicePage";
 import AboutPage from "./components/AboutPage";
@@ -13,14 +13,17 @@ import Footer from "./components/Footer";
 
 function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
   const submitHandler = (input) => {
     setIsFormSubmitted(input);
   };
 
   return (
     <div classname="app">
+      {/* <RouterProvider router={router} /> */}
       <BrowserRouter>
         <Routes>
+          <Route />
           <Route
             index
             element={
@@ -35,18 +38,10 @@ function App() {
               </div>
             }
           />
-          <Route path="/" Component={HomePage} />
-          <Route path="Service" Component={ServicePage} />
-          <Route path="About" Component={AboutPage} />
-          <Route path="project" Component={ProjectPage} />
-          <Route
-            path="/project/:projectId"
-            element={
-              <div>
-                <ProjectDetail />
-              </div>
-            }
-          />
+
+          <Route path="project">
+            <Route path=":projectId" element={<ProjectDetail />} />
+          </Route>
           <Route
             path="contact"
             element={

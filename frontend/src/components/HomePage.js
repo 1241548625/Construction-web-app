@@ -1,10 +1,17 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
 import "./Home.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const sectionId = urlParams.get("section");
+    if (sectionId != null) {
+      document.getElementById(sectionId).scrollIntoView();
+    }
+  }, []);
+
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
   }, []);

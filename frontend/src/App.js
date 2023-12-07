@@ -20,7 +20,6 @@ function App() {
 
   return (
     <div classname="app">
-      {/* <RouterProvider router={router} /> */}
       <BrowserRouter>
         <Routes>
           <Route />

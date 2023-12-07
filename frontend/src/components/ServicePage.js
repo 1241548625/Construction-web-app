@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./ServicePage.css";
 import p1 from "../asset/ServicePage1.jpg";
 import p2 from "../asset/ServicePage2.jpg";

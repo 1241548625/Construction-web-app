@@ -3,7 +3,6 @@ import project1 from "../asset/Project1.jpg";
 import project2 from "../asset/Project2.jpg";
 import project3 from "../asset/Project3.jpg";
 import project4 from "../asset/Project4.jpg";
-import Navbar from "./Navbar";
 import "./ProjectPage.css";
 import { useLocation, useParams } from "react-router-dom";
 import Line from "./Line";
@@ -35,7 +34,7 @@ const project = [
   },
   {
     id: 5,
-    title: "project1",
+    title: "project5",
     image: project1,
     description: "This is a short description",
   },

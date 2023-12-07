@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import p1 from "../asset/Contact2.jpg";
 import FormInput from "./FormInput";
 import "./ContactPage.css";

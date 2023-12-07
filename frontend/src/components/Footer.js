@@ -4,20 +4,39 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import "./Footer.css";
+import MapComonent from "./MapComonent";
 
 const Footer = () => {
+  const companyLocation = {
+    lat: 40.6687,
+    lng: -74.1143,
+    address: "Company Address, City, Country",
+  };
+
   return (
-    <div className="footer-container">
-      <div className="footer-copyright">
-        <CopyrightIcon></CopyrightIcon>
-        <span>contsruction company</span>
+    <footer className="footer-container">
+      <div className="footer-info">
+        <div className="footer-company-info">
+          <p>Construction Company</p>
+          <p>NJ, USA</p>
+          <p>Email: xxxxxx@gamil.com</p>
+          <p>111-222-3333</p>
+        </div>
+        {/* <div className="footer-copyright">
+          <CopyrightIcon></CopyrightIcon>
+          <span>contsruction company</span>
+        </div> */}
+        <div className="footer-follow">
+          <p>Follow Us</p>
+          <FacebookIcon style={{ marginRight: "5px" }}></FacebookIcon>
+          <InstagramIcon style={{ marginRight: "5px" }}></InstagramIcon>
+          <LinkedInIcon style={{ marginRight: "5px" }}></LinkedInIcon>
+        </div>
       </div>
-      <div className="footer-title">
-        <FacebookIcon></FacebookIcon>
-        <InstagramIcon></InstagramIcon>
-        <LinkedInIcon></LinkedInIcon>
+      <div className="map-container">
+        <MapComonent location={companyLocation} />
       </div>
-    </div>
+    </footer>
   );
 };
 

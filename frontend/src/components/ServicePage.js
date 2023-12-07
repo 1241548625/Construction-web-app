@@ -42,7 +42,7 @@ const ServicePage = () => {
             </p>
           </div>
         </div>
-        <div className="section">
+        <div className="section last">
           <div className="text" data-aos="fade-right">
             <h1>Consulting and Planning</h1>
             <p>

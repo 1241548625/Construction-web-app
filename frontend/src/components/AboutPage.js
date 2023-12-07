@@ -23,7 +23,7 @@ const AboutPage = () => {
       </div>
       <div className="section">
         <img className="pic" src={p2} alt="P1" data-aos="fade-right" />
-        <div className="text" data-aos="fade-left">
+        <div className="text last" data-aos="fade-left">
           <h1>OUR TEAM</h1>
           <p>
             Our success is a testament to the hard work and dedication of our

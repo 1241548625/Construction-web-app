@@ -10,6 +10,7 @@ import ProjectPage from "./components/ProjectPage";
 import ProjectDetail from "./components/ProjectDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import MapComonent from "./components/MapComonent";
 
 function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -17,7 +18,6 @@ function App() {
   const submitHandler = (input) => {
     setIsFormSubmitted(input);
   };
-
   return (
     <div classname="app">
       <BrowserRouter>

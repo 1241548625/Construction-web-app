@@ -10,7 +10,7 @@ const Footer = () => {
   const companyLocation = {
     lat: 40.6687,
     lng: -74.1143,
-    address: "Company Address, City, Country",
+    address: "Bayonne, NJ",
   };
 
   return (

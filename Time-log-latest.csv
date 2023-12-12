@@ -1,4 +1,4 @@
-week1,date,duration,category,activity
+﻿week1,date,duration,category,activity
 ,Monday,4 hour,planning,online search about what kind of web I want to make and looking for supervisor
 ,Tues,3 hour,planning,"online search material, tool that I will need in this project and orientation quiz. wrote note about the planning of web app "
 ,wed,4 hour,Intake survey,Intake survey  submitted and project proposal survery have not done yet
@@ -46,3 +46,22 @@ week 9,Mon,2 hr,Learning,Review css
 week 10,date,duration,category,activity
 ,thu,5 hr,assignment,presentation slide
 ,sat,7 hr,assigment,"presentation slide; and the previous time log can't convert to csv, so renew time log sheet "
+,,,,
+week 11,date,duration,category,activity
+,wed,5.5 hr,Development & learning ,"make confirm page responsive; make project page code more simple by using for loop to iterate each project. Learning react route, tring to fix route bug; fix confirm page navigate "
+,thur,3hr,learning ,react route 
+,,,,
+week 12,date,duration,category,activity
+,wed,3hr,learning and development,"fix route, put all component into home page. when user click navbar component, it jump to that section instead turn to new page, and fix css."
+,thur,5hr,learniing and development,"add footer and npm srcoll such that when user cilck navbar component, it will smoothly scroll to that section. Also add some line to separate each section; add animation when render"
+,sat,8hr,leaning and development,"learn how to do react dynamic import image, fix project route, and loop for each image into project detail page"
+week 13,date,duration,category,activity
+,mon,5hr,development ,working on project detail page
+,tue,4hr,searching and learning ,"navbar can't work in project detail page. Trying to fix bug (bug: when user click navbar element, it does not direct user. )"
+,wed,6hr,searching and learning ,"fixing navbar bug, and done. When user in Project detail page, click navbar, it will redirect user to the particular section in home page(since I put all element in home page)"
+week 14,date,duration,category,activity
+,thur,5hr,learniing and development,update footer; and company info and react leaflet(map); update css; 
+,sat,5hr,assigment,ppt 
+week 15,date,duration,category,activity
+,Mon,2hr,assignment ,finished ppt 
+,thue,1hr,assigment,demo

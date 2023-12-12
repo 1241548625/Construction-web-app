@@ -52,7 +52,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       ) : (
-        "no piactur"
+        "no piacture"
       )}
     </div>
   );

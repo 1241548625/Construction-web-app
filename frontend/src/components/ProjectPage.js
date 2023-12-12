@@ -44,8 +44,6 @@ const ProjectPage = () => {
   const { projectId } = useParams();
   const location = useLocation();
 
-  console.log(location);
-
   return (
     <div id="project-section">
       <Line />

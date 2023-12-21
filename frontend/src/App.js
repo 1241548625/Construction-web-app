@@ -44,17 +44,12 @@ function App() {
             path="contact"
             element={
               <div>
-                <ContactPage onFormSubmitted={submitHandler} />
+                <ContactPage />
               </div>
             }
           />
 
-          <Route
-            path="Confirm"
-            element={
-              <div>{<ConfirmPage isFormSubmit={isFormSubmitted} />}</div>
-            }
-          />
+          <Route path="Confirm" element={<div>{<ConfirmPage />}</div>} />
         </Routes>
       </BrowserRouter>
     </div>

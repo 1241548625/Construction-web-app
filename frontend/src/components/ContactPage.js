@@ -8,7 +8,6 @@ import Line from "./Line";
 
 const ContactPage = (props) => {
   const navigate = useNavigate();
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [values, setValues] = useState({
     FirstName: "",
     LastName: "",
@@ -71,8 +70,9 @@ const ContactPage = (props) => {
         }
       ).then((response) => {
         if (response.status === 200) {
+          console.log(response.status);
           // setIsFormSubmitted(true);
-          props.onFormSubmitted(true);
+          // props.onFormSubmitted(true);
           //after send message to backend, and backend send back 200 status, we navigate page
           navigate("/Confirm");
         }
